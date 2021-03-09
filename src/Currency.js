@@ -1,6 +1,5 @@
 import React, { useState } from "react"
-import './Currency.css'
-
+import "./Currency.css"
 
 const Forms = () => {
   const [million, setMillion] = useState("")
@@ -43,7 +42,7 @@ const Forms = () => {
         <form onSubmit={handleSubmitMToC}>
           <div>
             <label htmlFor="million">Enter in $ Million:</label>
-            <input type="number" id="million" name="million" value={million} onChange={(e) => setMillion(e.target.value)} />
+            <input step="any" type="number" id="million" name="million" value={million} onChange={(e) => setMillion(e.target.value)} />
             <button type="submit"> $ Million To ₹ </button>
           </div>
         </form>
@@ -62,7 +61,7 @@ const Forms = () => {
         <form onSubmit={handleSubmitBToC}>
           <div>
             <label htmlFor="billion">Enter in $ Billion:</label>
-            <input type="number" id="billion" name="billion" value={billion} onChange={(e) => setBillion(e.target.value)} />
+            <input step="any" type="number" id="billion" name="billion" value={billion} onChange={(e) => setBillion(e.target.value)} />
             <button type="submit"> $ Billion To ₹ </button>
           </div>
         </form>
