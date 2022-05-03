@@ -10,7 +10,7 @@ const Forms = () => {
   const handleSubmitMToC = (e) => {
     e.preventDefault()
     if (million) {
-      const mtoC = (million * 10 ** 6 * 73) / 10 ** 7
+      const mtoC = (million * 10 ** 6 * 76) / 10 ** 7
       const conversion = { million: mtoC }
       setListOfCurrencyM((listofcurrencyM) => {
         return [...listofcurrencyM, conversion]
@@ -24,7 +24,7 @@ const Forms = () => {
   const handleSubmitBToC = (e) => {
     e.preventDefault()
     if (billion) {
-      const btoC = (billion * 10 ** 9 * 73) / 10 ** 7
+      const btoC = (billion * 10 ** 9 * 76) / 10 ** 7
       const conversion = { billion: btoC }
       setListOfCurrencyB((listofcurrencyB) => {
         return [...listofcurrencyB, conversion]
